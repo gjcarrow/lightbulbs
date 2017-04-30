@@ -1,0 +1,185 @@
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+@import "componants/buttons";
+@import "componants/forms";
+@import "componants/hero";
+@import "componants/images";
+
+@import "partials/footer";
+@import "partials/body";
+@import "partials/grid";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/sidebar";
+
+/* General setup */
+/* primary-color: #00D1B2 */
+
+html {
+  font-size: 16px;
+  font-family: "noto serif","sans-serif";
+}
+
+/* Helpers */
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.edit_button {
+  display: inline-block;
+  width: 25px;
+  height: 100%;
+}
+
+.message-header {
+  background-color: #00d1b2;
+}
+
+.message-header p {
+  flex-grow: 1;
+}
+/* Typography */
+
+h1 {
+  font-size: 3.5rem;
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.5rem;
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2rem;
+  font-size: 2em;
+}
+
+h1 .lighter {
+  opacity: .6;
+}
+
+/* Layout and styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  /* align-items: center; */
+  height: inherit;
+}
+
+body > .wrapper {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  position: relative;
+}
+
+#post-content {
+  display: block;
+  min-height: 200px;
+  min-width: 100%;
+  background: #d7d7d7;
+}
+
+
+/* Form for New Idea */
+
+#newIdeaForm {
+  border:1px solid #ccc;
+  padding:1em;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #d7d7d7;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif", merriweather;
+  text-transform: uppercase;
+}
+
+/* List of ideas */
+#content {
+}
+#content header {
+
+}
+#content section {
+
+}
+#ideaList > div {
+
+}
+#content header{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.voting-block {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+
+}
+.voting-block span {
+  width: 30px;
+  cursor: pointer;
+}
+#ideaListHeader h3 {
+  font-family: bitter;
+}
+#ideaListHeader .forSearchIcon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  width: 20px;
+  background: url('../images/searchSmallWhite.png') no-repeat center;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#ideaListHeader .field.has-addons {
+  margin-bottom: 40px;
+}
+
+footer {
+  clear: both;
+}
+
+@media (max-width: 800px) {
+  body > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+}

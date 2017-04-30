@@ -1,0 +1,6 @@
+https://github.com/jwill9999/html-framework
+
+** if you happen to clone a copy of this from the git repo, the gulpfile.js is
+buggy because of the 'gulp:watch' command. It directs gulp to watch files in a directory called 'source', but the actual dirctory is 'src'
+
+"This works by running the gulp command, then running serve command from another terminal window" 
